@@ -87,7 +87,6 @@ const CodeMirror = React.createClass({
 		this.props.onCursorActivity && this.props.onCursorActivity(cm.getCursor(), cm.cursorCoords(true,'window'));
 	},
 	scrollChanged (cm) {
-		console.log('fffffffffff');
 		this.props.onScroll && this.props.onScroll(cm.getScrollInfo());
 	},
 	codemirrorValueChanged (doc, change) {
@@ -96,7 +95,6 @@ const CodeMirror = React.createClass({
 		}
 	},
 	render () {
-		console.log('here we go');
 		const editorClassName = className(
 			'ReactCodeMirror',
 			this.state.isFocused ? 'ReactCodeMirror--focused' : null,
