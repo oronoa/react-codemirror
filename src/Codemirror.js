@@ -16,6 +16,7 @@ const CodeMirror = React.createClass({
 		options: React.PropTypes.object,
 		path: React.PropTypes.string,
 		value: React.PropTypes.string,
+		cursor: React.PropTypes.object,
 		preserveScrollPosition: React.PropTypes.bool,
 	},
 	getDefaultProps () {
@@ -44,6 +45,9 @@ const CodeMirror = React.createClass({
 		this.codeMirror.on('cursorActivity', this.cursorActivity);
 		this.codeMirror.on('scroll', this.scrollChanged);
 		this.codeMirror.setValue(this.props.defaultValue || this.props.value || '');
+		if (this.props.cursor) {
+			this.codeMirror.setCursor(this.props.cursor);
+		}
 	},
 	componentWillUnmount () {
 		// is there a lighter-weight way to remove the cm instance?
