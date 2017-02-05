@@ -63,7 +63,7 @@ const CodeMirror = React.createClass({
 			}
 		}
 		var cur  = this.codeMirror.getCursor();
-		if (nexProps.cursor && (cur.ch != nextProps.cursor.ch || cur.line != nextProps.cursor.line)) {
+		if (nextProps.cursor && (cur.ch != nextProps.cursor.ch || cur.line != nextProps.cursor.line)) {
 			this.codeMirror.setCursor(nextProps.cursor);
 		}
 		if (typeof nextProps.options === 'object') {
