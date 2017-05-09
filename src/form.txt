@@ -1,0 +1,28 @@
+This form gathers information from you and will be submitted to our persoal 
+[let's go]
+
+name:____
+email:______
+company address:_______
+your message:_____________
+size of organization: 
+ 	1-10
+	2-20
+	4-50
+	7-80
+	other
+upload photo:_____
+city you live in:
+	jerusalem
+	tel aviv
+	other
+date of birth:______
+link to web site:_____
+are you married: y/n
+rate our service: 1-5
+rate your ux: [1..10] great,avarage,bad
+
+thank you for your time
+
+[submit]
+* by pressing submit you agree to our terms and conditions
